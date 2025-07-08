@@ -1,5 +1,15 @@
-# Non-Linear Data Structures 
+# Practica: Non-Linear Data Structures 
 
+## 📌 Información General
+
+- **Título:** Práctica maps
+- **Asignatura:** Estructura de Datos  
+- **Carrera:** Computación  
+- **Estudiante:** Janelly Dayanna Chacha Vélez
+- **Fecha:** 08-07-2025  
+- **Profesor:** Ing. Pablo Torres  
+
+---
 ## Getting Started
 
 Este repositorio se refiere a la segunda unidad de Estructuras de Datos, donde se cubren estructuras como sets y diccionarios
