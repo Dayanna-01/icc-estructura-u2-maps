@@ -1,6 +1,12 @@
 package models;
 
-public class Empleado {
+public class Empleado implements Comparable<Empleado> {
+    
+    @Override
+    public int compareTo(Empleado o) {
+        return 0;
+    }
+
     private int id;
     private String name;
     private String position;

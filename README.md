@@ -9,10 +9,13 @@
 - **Fecha:** 08-07-2025  
 - **Profesor:** Ing. Pablo Torres  
 
+
+![Imagen de la compilacion
+](image.png)
 ---
 ## Getting Started
-
 Este repositorio se refiere a la segunda unidad de Estructuras de Datos, donde se cubren estructuras como sets y diccionarios
+
 ## Requirements
 - Java JDK 11 or higher
 - Git 2.20 or higher

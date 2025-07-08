@@ -1,7 +1,12 @@
 {
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
+    "java.project.sourcePaths": [
+        "src",
+        "test\\controllers"
+    ],
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "c:\\Users\\USER\\Desktop\\ESTRUCTURA\\icc-estructura-u2-maps\\lib\\hamcrest-core-1.3.jar",
+        "c:\\Users\\USER\\Desktop\\ESTRUCTURA\\icc-estructura-u2-maps\\lib\\apiguardian-api-1.1.0.jar",
+        "c:\\Users\\USER\\Desktop\\ESTRUCTURA\\icc-estructura-u2-maps\\lib\\junit-platform-console-standalone-1.7.0.jar",
+        "c:\\Users\\USER\\Desktop\\ESTRUCTURA\\icc-estructura-u2-maps\\lib\\junit-jupiter-api-5.7.0.jar"
     ]
 }
