@@ -9,7 +9,7 @@
 - **Fecha:** 08-07-2025  
 - **Profesor:** Ing. Pablo Torres  
 
-pero sin carpeta BIN creada porque no compilaba vista por el docente
+pero sin carpeta BIN creada porque no compilaba vista por el docente // corregido
 
 ![Imagen de compilacion 1
 ](image.png)
