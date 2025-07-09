@@ -2,23 +2,26 @@ package controllers;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import dao.EmpleadoDAO;
 import models.Empleado;
 
-public class EmpleadoContoller {
+public class EmpleadoContoller  {
+    private EmpleadoDAO empleadoDAO;
 
-    private Map<Integer, Empleado> empleados = new HashMap<>();
-
-    public void agregarEmpleado(Empleado emp) {
-        empleados.put(emp.getId(), emp);
+    public EmpleadoContoller(EmpleadoDAO empleadoDAO){
+        this.empleadoDAO = empleadoDAO;
     }
 
-    public Empleado buscarEmpleado(int id) {
-        return empleados.get(id);
+    public void agregarEmpleado(Empleado emp){
+        empleadoDAO.add(emp);
     }
 
-    public void listarEmpleados() {
-        for (Empleado e : empleados.values()) {
-            System.out.println(e);
-        }
+    public void eliminarEmpleado(int codigo){
+        empleadoDAO.eliminar(codigo);
+    }
+
+    public void listarEmpleados(){
+        empleadoDAO.listar();
     }
 }

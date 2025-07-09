@@ -1,6 +1,8 @@
 package models;
 
-public class Empleado implements Comparable<Empleado> {
+import java.util.Comparator;
+
+public class Empleado implements Comparable<Empleado>{
     private int id;
     private String name;
     private String position;
@@ -29,28 +31,35 @@ public class Empleado implements Comparable<Empleado> {
     }
 
     @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + id;
+        return result;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
-        if (obj == null || getClass() != obj.getClass())
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
             return false;
         Empleado other = (Empleado) obj;
-        return this.id == other.id;
+        if (id != other.id)
+            return false;
+    
+        return true;
     }
 
-    @Override
-    public int hashCode() {
-        return Integer.hashCode(id);
-    }
+@Override
+public int compareTo(Empleado other) {
+    int result = Integer.compare(this.id, other.id);
+    if (result != 0) return result;
 
-    @Override
-    public int compareTo(Empleado other) {
-        int result = Integer.compare(this.id, other.id);
-        if (result != 0) return result;
+    return this.position.compareToIgnoreCase(other.position);
+}
 
-        result = this.name.compareToIgnoreCase(other.name);
-        if (result != 0) return result;
-
-        return this.position.compareToIgnoreCase(other.position);
-    }
+    
 }
