@@ -11,8 +11,11 @@
 
 pero sin carpeta BIN creada porque no compilaba vista por el docente
 
-![Imagen de la compilacion
+![Imagen de la compilacion 1
 ](image.png)
+
+![Imagen de la compilacion de DAO
+](image-1.png)
 ---
 ## Getting Started
 Este repositorio se refiere a la segunda unidad de Estructuras de Datos, donde se cubren estructuras como sets y diccionarios
